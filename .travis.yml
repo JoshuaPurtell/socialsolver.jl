@@ -9,6 +9,8 @@ matrix:
     - julia: nightly
 notifications:
   email: false
+- name: Julia TagBot
+  uses: JuliaRegistries/TagBot@v1.8.1
 env:
    - PYTHON=""
 after_success:
