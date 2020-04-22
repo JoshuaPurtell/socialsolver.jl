@@ -1,3 +1,9 @@
-using Test
+using Test, socialsolver
 
-println("no tests passed")
+@testset "first" begin
+    @test 7 == 7
+end
+
+@testset "second" begin
+    @test 1. == 1.
+end
