@@ -1,4 +1,4 @@
-using Test, socialsolver
+using Test, SocialSolver
 
 @testset "first" begin
     @test 7 == 7
