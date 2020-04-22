@@ -3,12 +3,6 @@ __precompile__()
 module SocialSolver
 
     # stdlib (standard libraries)
-    using Dates
-    using Distributed
-    using LinearAlgebra # for LowerTriangular, logdet, diag
-    using Printf: @printf, @sprintf
-    using Random
-    using Statistics: mean, quantile, median
 
     # other libraries, indicate compatible version in Project.toml
     using CSV
@@ -21,13 +15,6 @@ module SocialSolver
     using MathOptInterface
     using Distributions
 
-    import Base: show
-    import GLM: ftest
-
-    const DEBUGC = false # even more debug messages
-    global CHECKNET = false # for debugging only
-
-    export ftest
     export
         ## Network Definition
         problem_glpk, 
